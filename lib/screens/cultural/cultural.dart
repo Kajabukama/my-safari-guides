@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:my_safari_guide/common/Drawer/drawer.dart';
 
 class CulturalScreen extends StatefulWidget {
   @override
@@ -36,10 +35,14 @@ class _CulturalScreenState extends State<CulturalScreen> {
             )
           ];
         },
-        body: Center(
-          child: Text('Cultural Tourism'),
-        ),
+        body: _buildModuleList(context),
       ),
+    );
+  }
+
+  Widget _buildModuleList(BuildContext context) {
+    return Center(
+      child: Text("This is a list Builder"),
     );
   }
 }
